@@ -1,0 +1,139 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_menu
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_menu
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_menu
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: name path
+  steps:
+  - intent: greet
+  - action: utter_menu
+  - intent: tell_name
+  - action: utter_ask_fname
+  - intent: give_fname
+  - action: action_receive_fname
+  - intent: repeat_name
+  - action: action_say_name
+
+- story: interactive_story_2
+  steps:
+  - intent: greet #hi
+  - action: utter_menu
+  - intent: tell_name #i would like to provide you some feedback
+  - action: utter_ask_fname 
+  - intent: give_fname
+  - action: action_receive_fname
+  - slot_was_set:
+    - fname: akhila
+  - intent: give_lname
+  - action: action_receive_lname
+  - slot_was_set:
+    - lname: puppala
+  - intent: give_feedback
+  - action: action_receive_feedback
+  - slot_was_set:
+    - feedback: love  
+  - intent: choice #yes
+  - action: action_save_feedback
+  - intent: repeat_name #repeat my name
+  - action: action_say_name
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: weather
+  steps:
+  - intent: greet
+  - action: utter_menu
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: places
+  steps:
+  - intent: greet #hello
+  - action: utter_menu 
+  - intent: placess #places near me
+  - action: utter_zipcode
+  - intent: zipcode #95134
+  - action: action_place_api
+  - intent: aboutpark #more about places
+  - action: utter_about_places
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: smalltalk
+  steps:
+  - intent: greet #hello
+  - action: utter_menu 
+  - intent: about
+  - action: utter_about_me
+  - intent: contact
+  - action: utter_contact_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: final
+  steps:
+  - intent: greet #hi
+  - action: utter_menu  
+  - intent: about #tell me about you
+  - action: utter_about_me
+  - intent: weather #tell me the weather forcast
+  - action: utter_city
+  - intent: city #fremont
+  - action: action_weather_api
+  - intent: placess #places near me
+  - action: utter_zipcode
+  - intent: zipcode #95134
+  - action: action_place_api
+  - intent: aboutpark #more about places
+  - action: utter_about_places
+  - intent: tell_name #i would like to provide you some feedback
+  - action: utter_ask_fname 
+  - intent: give_fname
+  - action: action_receive_fname
+  - slot_was_set:
+    - fname: akhila
+  - intent: give_lname
+  - action: action_receive_lname
+  - slot_was_set:
+    - lname: puppala
+  - intent: give_feedback
+  - action: action_receive_feedback
+  - slot_was_set:
+    - feedback: improve  
+  - intent: choice #save it
+  - action: action_save_feedback
+  - intent: repeat_name #repeat my feedback
+  - action: action_say_name
+  - intent: goodbye
+  - action: utter_goodbye
+

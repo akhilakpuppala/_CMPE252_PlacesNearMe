@@ -1,0 +1,128 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- goodbye:
+    use_entities: true
+- greet:
+    use_entities: true
+- tell_name:
+    use_entities: true
+- repeat_name:
+    use_entities: true
+- give_fname:
+    use_entities: true
+- give_lname:
+    use_entities: true    
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- tell_lname:
+    use_entities: true
+- tell_feedback:
+    use_entities: true    
+- give_feedback:
+    use_entities: true
+- choice:
+    use_entities: true 
+- weather:
+    use_entities: true
+- city:
+    use_entities: true
+- placess:
+    use_entities: true 
+- zipcode:
+    use_entities: true
+- about:
+    use_entities: true
+- contact:
+    use_entities: true
+- aboutpark:
+    use_entities: true              
+
+entities: []
+slots:
+  fname:
+    type: text
+    mappings:
+    - type: custom
+  lname:
+    type: text
+    mappings:
+    - type: custom  
+  feedback:
+    type: text
+    mappings:
+    - type: custom  
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up: why do we tell every actor to break a leg? because every play have a cast :D'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_fname:
+  - text: What is your first name?
+  utter_ask_lname:
+  - text: what is your last name?
+  utter_ask_feedback:
+  - text: what is your feedback?
+  utter_ask_save_data:
+  - text: please confirm again to save your data.
+  utter_city:
+  - text: which city you want to check for?
+  utter_temp:
+  - text: Today's temperature is {temp} degree Celcius.
+  utter_zipcode:
+  - text: please provide me your zipcode
+  utter_places:
+  - text: The places that are close to your zipcode are as follows {temp}
+  utter_save_data:
+  - text: can I save your data into my database? if yes say |save it|
+  utter_contact_info:
+  - text: if you are having some ideas in improving me, you can send out a mail to xxxxx@sjsu.edu
+  utter_menu:
+  - text: Hi,welcome to PlacesNearMe. here are some questions you can ask me. i.tell me about you, ii.places near me, iii.give feedback, iv.what's the weather
+  utter_about_places:
+  - text: I am still working on this. for now you can find about them on NPS https://www.nps.gov/index.htm
+  utter_about_me:
+  - text: I am bot created for a class level project. My work is to suggest some places around you to visit based on your pincode. I can also make some small talk like weather near you,telling some jokes.I also accept some feedback which helps in improving myself.
+actions:
+- action_receive_fname
+- action_receive_lname
+- action_receive_feedback
+- action_save_feedback
+- action_say_name
+- utter_ask_fname
+- utter_ask_lname
+- utter_goodbye
+- utter_greet
+- utter_ask_feedback
+- utter_ask_save_data
+- utter_city 
+- utter_temp 
+- action_weather_api
+- action_place_api
+- utter_zipcode
+- utter_contact_info
+- utter_about_me
+- utter_about_places
+forms: {}
+e2e_actions: []

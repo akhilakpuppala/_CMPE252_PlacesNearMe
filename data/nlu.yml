@@ -1,0 +1,188 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - i am sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: tell_name
+  examples: |
+    - i would like to provide you some feedback
+    - would like to provide feedback
+
+- intent: tell_lname   
+  examples: |
+   - give last name
+
+- intent: tell_feedback
+  examples: |
+   - give feedback 
+
+- intent: repeat_name
+  examples: |
+    - what is my feedback
+    - tell me my feedback
+    - repeat my feedback
+
+- intent: give_fname
+  examples: |
+    - akhila
+    - rachael
+    - emma
+    - juste
+    - jorjeta
+- intent: give_lname
+  examples: |
+    - puppala
+    - costal
+    - alameda
+    - watson
+    - jetcheva
+
+- intent: give_feedback
+  examples: |
+    - nice work
+    - keep going
+    - love
+    - applauds
+    - love the work
+    - hate
+    - improve
+
+- intent: choice
+  examples: |
+    - save feedback 
+    - save data
+    - save it  
+
+- intent: weather
+  examples: |
+    - what's the weather
+    - i want to know the weather of today
+    - tell me the weather forcast
+    - hows the weather today
+
+- intent: city
+  examples: | 
+    - San jose
+    - sunnyvale
+    - santa clara
+    - san francisco
+    - fremont
+    - union city    
+
+- intent: placess
+  examples: | 
+    - suggest some places around me
+    - places around me
+    - places near me
+    - provide places around me
+    - visit near me
+    - places to visit  
+
+- intent: zipcode
+  examples: | 
+    - 95113
+    - 95134
+    - 95110
+    - 95133
+
+- intent: about
+  examples: | 
+    - tell me about you
+    - more info about you
+    - how can you help me
+
+- intent: contact
+  examples: |
+    - can I get your contact information
+    - give me contact details
+    - contact details
+
+- intent: aboutpark
+  examples: |
+    - more information about parks
+    - more about places
+    - information about these places
+    
