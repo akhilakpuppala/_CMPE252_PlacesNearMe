@@ -1,4 +1,4 @@
-# Travel Agent Chatbot - BoBo
+# places suggesting Chatbot - PlacesNearMe
 By: Akhila Puppala
 
 This chatbot is build using Rasa Platform
