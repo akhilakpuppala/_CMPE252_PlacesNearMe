@@ -82,23 +82,24 @@ In the virtual environment, open the project and run the following commands on t
  
  user: I would like to provide you feedback
  
- bot: please provide your first name
+ bot: What is your first name?
  
  user: akhila
  
- bot: please provide your last name
+ bot: I'll remember your first name akhila!. What is your last name?
  
  user: puppala
  
- bot: please provide your feedback
+ bot: I'll remember your last name puppala!. what is your feedback?
  
  user: improve
  
- bot: can I save this feedback?
+ bot: I'll remember your feedback as love!
+can I save your data into my database? if yes say |save it|
  
  user: save it
  
- bot: thank you
+ bot: Thanks for the valuable feedback.
  
  user: repeat my feedback
  
@@ -106,6 +107,7 @@ In the virtual environment, open the project and run the following commands on t
  your last name is puppala
  your feedback is improve
  
+ Screen Shot of my database that saved the feedback:
 <img width="618" alt="Screen Shot 2022-04-25 at 10 32 55 AM" src="https://user-images.githubusercontent.com/73505100/165182385-7f029149-8af6-4485-9361-f24a21a53924.png">
  
  
