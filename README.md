@@ -56,7 +56,11 @@ In the virtual environment, open the project and run the following commands on t
  
  user: 95134
  
- bot: here are the list of places you can visit near you
+ bot: The places that are close to your zipcode are as follows ["Eugene O'Neill National Historic Site", 'John Muir National Historic Site', 'Juan Bautista de Anza National Historic Trail', 'Lassen Volcanic National Park', 'Lava Beds National Monument', 'Muir Woods National Monument', 'Pinnacles National Park', 'Point Reyes National Seashore', 'Port Chicago Naval Magazine National Memorial', 'Redwood National and State Parks', 'Rosie the Riveter WWII Home Front National Historical Park', 'Tule Lake National Monument', 'Whiskeytown National Recreation Area', 'Yosemite National Park']
+ 
+ user: more about these places
+ 
+ bot: I am still working on this. for now you can find about them on NPS https://www.nps.gov/index.htm
  
  ## Conversation Flow 2: Weather forecast
  user: hi
@@ -101,5 +105,7 @@ In the virtual environment, open the project and run the following commands on t
  bot: your first name is akhila
  your last name is puppala
  your feedback is improve
+ 
+<img width="618" alt="Screen Shot 2022-04-25 at 10 32 55 AM" src="https://user-images.githubusercontent.com/73505100/165182385-7f029149-8af6-4485-9361-f24a21a53924.png">
  
  
