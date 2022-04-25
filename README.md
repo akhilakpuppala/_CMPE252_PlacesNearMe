@@ -69,11 +69,11 @@ In the virtual environment, open the project and run the following commands on t
  
  user: what's the weather
  
- bot: please provide your city name
+ bot: which city you want to check for?
  
  user: fremont
  
- bot: the weather is 20 celcius
+ bot: Today's temperature is 18 degree Celcius.
  
   ## Conversation Flow 2: Provide feedback
  user: hi
