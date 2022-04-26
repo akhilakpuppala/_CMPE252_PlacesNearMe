@@ -1,7 +1,7 @@
 # places suggesting Chatbot - PlacesNearMe
 By: Akhila Puppala
 
-This chatbot is build using Rasa Platform
+This chatbot is build using Rasa Platform(version: 2.0) 
 
 Rasa Installation:
 https://rasa.com/docs/rasa/installation
