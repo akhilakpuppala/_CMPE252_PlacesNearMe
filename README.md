@@ -49,9 +49,13 @@ In the virtual environment, open the project and run the following commands on t
  user: hi
  
  bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ 
  i.tell me about you 
+ 
  ii.places near me 
+ 
  iii.give feedback
+ 
  iv.what's the weather
  
  user: Places near me
@@ -60,11 +64,18 @@ In the virtual environment, open the project and run the following commands on t
  
  user: 95134
  
- bot: Places:
+ bot: 
+ 
+ Places:
+ 
 (1). Muir Woods National Monument
+
 (2). Pinnacles National Park
+
 (3). Point Reyes National Seashore
+
 (4). Yosemite National Park
+
 The above are the places I can fetch that are close to you.
  
  user: more about these places
@@ -75,9 +86,13 @@ The above are the places I can fetch that are close to you.
  user: Hello
  
  bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ 
  i.tell me about you 
+ 
  ii.places near me 
+ 
  iii.give feedback
+ 
  iv.what's the weather
  
  user: what's the weather
@@ -92,9 +107,13 @@ The above are the places I can fetch that are close to you.
  user: hi
  
  bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ 
  i.tell me about you 
+ 
  ii.places near me 
+ 
  iii.give feedback
+ 
  iv.what's the weather
  
  user: I would like to provide you feedback
