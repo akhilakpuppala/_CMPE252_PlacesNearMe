@@ -46,9 +46,9 @@ In the virtual environment, open the project and run the following commands on t
   go to the app section,select PlacesNearMe and start making conversation
  
  ## Conversation Flow 1: Suggest Places
- user: hi
+* user: hi
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+* bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
  
  i.tell me about you 
  
@@ -58,13 +58,13 @@ In the virtual environment, open the project and run the following commands on t
  
  iv.what's the weather
  
- user: Places near me
+* user: Places near me
  
- bot: please provide your zipcode
+* bot: please provide your zipcode
  
- user: 95134
+* user: 95134
  
- bot: 
+* bot: 
  
  Places:
  
@@ -78,14 +78,14 @@ In the virtual environment, open the project and run the following commands on t
 
 The above are the places I can fetch that are close to you.
  
- user: more about these places
+* user: more about these places
  
- bot: I am still working on this. for now you can find about them on NPS https://www.nps.gov/index.htm
+* bot: I am still working on this. for now you can find about them on NPS https://www.nps.gov/index.htm
  
  ## Conversation Flow 2: Weather forecast
- user: Hello
+* user: Hello
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+* bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
  
  i.tell me about you 
  
@@ -95,18 +95,18 @@ The above are the places I can fetch that are close to you.
  
  iv.what's the weather
  
- user: what's the weather
+* user: what's the weather
  
- bot: which city you want to check for?
+* bot: which city you want to check for?
  
- user: Fremont
+* user: Fremont
  
- bot: Today's temperature is 50 degree Fahrenheit.
+* bot: Today's temperature is 50 degree Fahrenheit.
  
   ## Conversation Flow 2: Provide feedback
- user: hi
+* user: hi
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+* bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
  
  i.tell me about you 
  
@@ -116,30 +116,30 @@ The above are the places I can fetch that are close to you.
  
  iv.what's the weather
  
- user: I would like to provide you feedback
+* user: I would like to provide you feedback
  
- bot: What is your first name?
+* bot: What is your first name?
  
- user: akhila
+* user: akhila
  
- bot: I'll remember your first name akhila!. What is your last name?
+* bot: I'll remember your first name akhila!. What is your last name?
  
- user: puppala
+* user: puppala
  
- bot: I'll remember your last name puppala!. what is your feedback?
+* bot: I'll remember your last name puppala!. what is your feedback?
  
- user: improve
+* user: improve
  
- bot: I'll remember your feedback as love!
+* bot: I'll remember your feedback as love!
 can I save your data into my database? if yes say |save it|
  
- user: save it
+* user: save it
  
- bot: Thanks for the valuable feedback.
+* bot: Thanks for the valuable feedback.
  
- user: repeat my feedback
+* user: repeat my feedback
  
- bot: Hi akhila puppala. Your Feedback is improve
+* bot: Hi akhila puppala. Your Feedback is improve
  
  # Screen Shot of my database that saved the feedback:
  
