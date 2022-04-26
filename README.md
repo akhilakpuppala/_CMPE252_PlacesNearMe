@@ -48,37 +48,54 @@ In the virtual environment, open the project and run the following commands on t
  ## Conversation Flow 1: Suggest Places
  user: hi
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me. i.tell me about you, ii.places near me, iii.give feedback, iv.what's the weather
+ bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ i.tell me about you 
+ ii.places near me 
+ iii.give feedback
+ iv.what's the weather
  
- user: places near me
+ user: Places near me
  
  bot: please provide your zipcode
  
  user: 95134
  
- bot: The places that are close to your zipcode are as follows ["Eugene O'Neill National Historic Site", 'John Muir National Historic Site', 'Juan Bautista de Anza National Historic Trail', 'Lassen Volcanic National Park', 'Lava Beds National Monument', 'Muir Woods National Monument', 'Pinnacles National Park', 'Point Reyes National Seashore', 'Port Chicago Naval Magazine National Memorial', 'Redwood National and State Parks', 'Rosie the Riveter WWII Home Front National Historical Park', 'Tule Lake National Monument', 'Whiskeytown National Recreation Area', 'Yosemite National Park']
+ bot: Places:
+(1). Muir Woods National Monument
+(2). Pinnacles National Park
+(3). Point Reyes National Seashore
+(4). Yosemite National Park
+The above are the places I can fetch that are close to you.
  
  user: more about these places
  
  bot: I am still working on this. for now you can find about them on NPS https://www.nps.gov/index.htm
  
  ## Conversation Flow 2: Weather forecast
- user: hi
+ user: Hello
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me. i.tell me about you, ii.places near me, iii.give feedback, iv.what's the weather
+ bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ i.tell me about you 
+ ii.places near me 
+ iii.give feedback
+ iv.what's the weather
  
  user: what's the weather
  
  bot: which city you want to check for?
  
- user: fremont
+ user: Fremont
  
- bot: Today's temperature is 18 degree Celcius.
+ bot: Today's temperature is 50 degree Fahrenheit.
  
   ## Conversation Flow 2: Provide feedback
  user: hi
  
- bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me. i.tell me about you, ii.places near me, iii.give feedback, iv.what's the weather
+ bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
+ i.tell me about you 
+ ii.places near me 
+ iii.give feedback
+ iv.what's the weather
  
  user: I would like to provide you feedback
  
@@ -103,9 +120,7 @@ can I save your data into my database? if yes say |save it|
  
  user: repeat my feedback
  
- bot: your first name is akhila
- your last name is puppala
- your feedback is improve
+ bot: Hi akhila puppala. Your Feedback is improve
  
  # Screen Shot of my database that saved the feedback:
  
