@@ -19,7 +19,10 @@ Prequisites:
  ```
 
 ### **How to run the chatbot:**
-* open the virtual environment
+* download the entire git into your local
+
+
+* open the virtual environment using the terminal
   ```
   source venv/bin/activate
   ```
@@ -103,7 +106,7 @@ The above are the places I can fetch that are close to you.
  
 * bot: Today's temperature is 50 degree Fahrenheit.
  
-  ## Conversation Flow 2: Provide feedback
+  ## Conversation Flow 3: Provide feedback
 * user: hi
  
 * bot: Hi,welcome to PlacesNearMe. here are some questions you can ask me
